@@ -20,7 +20,7 @@ class ContactItem extends Component {
 }
 ContactItem.propTypes = {
   name: PropTypes.string.isRequired,
-  number: PropTypes.number.isRequired,
+  number: PropTypes.node.isRequired,
   onDeleteContact: PropTypes.func.isRequired,
   id: PropTypes.string.isRequired,
 };
