@@ -5,5 +5,8 @@ export const ListContainer = styled.ul`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  list-style: space;
+  padding-left: 10px;
+  list-style-type: circle;
+  /* background-color: green; */
+  box-shadow: rgba(255, 255, 255, 0.2);
 `;

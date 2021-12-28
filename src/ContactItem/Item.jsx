@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import { Item } from "./CSSContactItem";
 
 class ContactItem extends Component {
@@ -17,4 +18,10 @@ class ContactItem extends Component {
     );
   }
 }
+ContactItem.propTypes = {
+  name: PropTypes.string.isRequired,
+  number: PropTypes.number.isRequired,
+  onDeleteContact: PropTypes.func.isRequired,
+  id: PropTypes.string.isRequired,
+};
 export default ContactItem;

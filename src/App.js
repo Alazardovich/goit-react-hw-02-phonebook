@@ -23,7 +23,7 @@ export class App extends Component {
   findContact = (name) => {
     const { contacts } = this.state;
     const normalizedName = name.toLowerCase();
-    return contacts.find(
+    return contacts.some(
       (contact) => contact.name.toLowerCase() === normalizedName
     );
   };

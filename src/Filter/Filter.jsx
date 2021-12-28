@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { nanoid } from "nanoid";
+import PropTypes from "prop-types";
 import { FilterContainer } from "./CSSFilter";
 
 class Filter extends Component {
@@ -23,5 +24,9 @@ class Filter extends Component {
 }
 Filter.defaultProps = {
   filter: "",
+};
+Filter.propTypes = {
+  filter: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
 };
 export default Filter;
