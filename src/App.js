@@ -1,11 +1,11 @@
 import "./App.css";
 import React, { Component } from "react";
 import { nanoid } from "nanoid";
-// import toast, { Toaster } from 'react-hot-toast';
+import toast, { Toaster } from "react-hot-toast";
 
-import ContactForm from "./Form/Form";
-import Filter from "./Form/Filter";
-import ContactList from "./Form/ContactList";
+import ContactForm from "./Form/Form.jsx";
+import Filter from "./Filter/Filter.jsx";
+import ContactList from "./ContactList/ContactList.jsx";
 
 // import ReactDOM from 'react-dom';
 
@@ -31,7 +31,7 @@ export class App extends Component {
     const checkName = this.findContact(name);
 
     if (checkName) {
-      return alert(`${name}is already in contacts`);
+      return toast.error(`${name}is already in contacts`);
     }
     const contact = {
       id: nanoid(),
@@ -71,6 +71,7 @@ export class App extends Component {
     const visibleContact = this.handleFilter();
     return (
       <div>
+        <Toaster />
         <h1>Phonebook</h1>
         <ContactForm onSubmit={this.addNewContact} />
 
