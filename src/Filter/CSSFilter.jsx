@@ -11,6 +11,7 @@ export const FilterContainer = styled.div`
     border-color: rgba(235, 236, 240);
     font-size: 14px;
     margin-top: 5px;
+    text-align: center;
   }
   & input:hover {
     background-color: rgba(124, 253, 182, 0.4);
