@@ -3,9 +3,9 @@ import React, { Component } from "react";
 import { nanoid } from "nanoid";
 import toast, { Toaster } from "react-hot-toast";
 
-import ContactForm from "./Form/Form.jsx";
-import Filter from "./Filter/Filter.jsx";
-import ContactList from "./ContactList/ContactList.jsx";
+import ContactForm from "../src/components/Form/Form.jsx";
+import Filter from "../src/components/Filter/Filter";
+import ContactList from "../src/components/ContactList/ContactList.jsx";
 
 // import ReactDOM from 'react-dom';
 
